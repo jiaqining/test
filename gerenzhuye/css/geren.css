@@ -1,0 +1,167 @@
+
+      
+			*{
+				padding: 0;
+				margin: 0;
+				list-style: none;
+			}   
+			 .all{
+			  	margin: 0 auto;
+			  width: 1000px;
+			  background-color:aqua;
+		  }
+		  .main .left #x {
+			  width: 50px;
+			  height: 30px;
+			  
+			  }
+			ul,li{
+				list-style: none;
+			}
+			.header{
+				width: 1000px;
+				height: 150px;	
+				margin: 0 auto;
+				background-image:url(images/03.jpeg);
+				background-size:cover;
+				background-position: left  center;
+			}
+			.nav {
+				width: 1000px;
+				height: 40px;
+				background-color:aqua;	
+			    background-size:cover;
+				margin: 0 auto;
+			}
+			
+			.nav ul {
+				list-style: none;
+			}
+			
+			.nav ul li {
+				float: left;
+				color:aliceblue;
+				width: 100px;
+				height: 40px;
+				text-align: center;
+				line-height: 40px;
+			
+			}
+			
+			.nav ul li:hover {
+				color:aqua;
+			}
+			
+			.nav .active {
+				color: black;
+			}
+			.main .left p {
+				font-size: 18px;
+				font-weight: bold;
+				font-family: "bradley hand itc";
+				color: #333;
+				line-height: 30px;
+				padding-left: 10px;
+			}
+			
+			.main .left p span.count {
+				color:indigo;
+				font-size: 30px;
+			}
+			
+			.main .right {
+				width: 690px;
+				float: right;
+			}
+			
+	.main.r1 {
+		height: 100px;
+		width: 100px;
+		float: right;
+	}
+			
+			.main {
+				width: 1000px;
+			
+				overflow: hidden;
+				margin: 10px auto;
+			}
+			
+			.main .left {
+				width: 300px;
+				height: 650px;
+			background-color:aqua;
+				float:left;
+				text-align: center;
+			}
+			
+			.main .left #tx {
+				width: 250px;
+				height:250px;
+				border: 5px solid mediumpurple;
+				padding: 10px;
+				display: block;
+				margin: 10px;
+			}
+			
+	.right .b {
+		margin-top: 5px;
+		text-indent: 2em;
+		font-size: 20px;
+		padding: 20px 0;
+		line-height: 30px;
+		font-family:"bradley hand itc";
+	}
+			.wuxuejie{
+				width:500px;
+				height: 500px;
+				margin: 30px auto;
+				position: relative;
+			}
+			.wuxuejie img{
+				width: 500px;
+				height: 500px;
+			}
+			.wuxuejie>.igs{
+				width: 500px;
+				height: 500px;
+			}
+			.wuxuejie>.igs>.ig{
+				width: 500px;
+				height: 500px;
+				display: none;
+			}
+			.wuxuejie>.igs>.cur{
+				display: block;
+			}
+			.wuxuejie>.dots{
+				position: absolute;
+				width: 122px;
+				height: 10px;
+				left: 190px;
+				bottom: 20px;
+			}
+			.wuxuejie>.dots>.dot{
+				width: 20px;
+				height: 20px;
+				margin-left: 10px;
+				float: left;
+				border-radius: 50%;
+				background-color:mediumpurple;
+				text-align: center;
+			}
+			
+			
+			
+			.footer {
+				width: 1000px;
+				height: 90px;
+				background-color:aqua;
+				margin: 0 auto;
+				text-align: center;
+			}
+			.footer p{
+				line-height: 30px;
+			}
+	
+			

@@ -1,0 +1,16 @@
+			body {
+				position: relative;
+				width: 100%;
+				height: 100%;
+				background-image: url(images/dongtaitu.gif);
+				background-attachment: fixed;
+				background-repeat: no-repeat;
+				background-size: cover;
+				float: left;
+			}
+			.box {
+				width: 600px;
+				height: 600px;
+				border: 0 solid red;
+				background: url("images/dongtaitu.gif") no-repeat; //在这里可以进行更改
+			}

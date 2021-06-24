@@ -1,0 +1,12 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background: url(../images/beijing.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% 999px;
+}
+h1,p{
+	text-align: center;
+}
