@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>QQ音乐</title>
+		<script src="js/jquery.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/main.css"/>
+		<link rel="stylesheet" type="text/css" href="css/top.css"/>
+		
+	</head>
+	<body>
+		<div class="chead" id="ihead">
+			<div class="chead1" id="ihead1">
+				<h1 class="head_logo_h1">
+					<a>
+						<img class="logo" src="img/logo.png" >
+					</a>
+				</h1>
+				<ul class="head_text">
+					<li class="head_text_li"><a href="#" class="text_link head_text1">音乐馆</a></li>
+					<li class="head_text_li"><a href="#" class="text_link">我的音乐</a></li>
+					<li class="head_text_li"><a href="#" class="text_link">客户端</a><img src="img/mark_1.png" class="text__img"></li>
+					<li class="head_text_li"><a href="#" class="text_link">开放平台</a></li>
+					<li class="head_text_li"><a href="#" class="text_link">VIP</a></li>
+				</ul>
+				<ul class="head_text_2" style="display:;">
+					<li class="head_text_li2"><a href="index.html" class="text_link_2">首页</a></li>
+					<li class="head_text_li2"><a href="#" class="text_link_2">歌手</a></li>
+					<li class="head_text_li2"><a href="#" class="text_link_2">新碟</a></li>
+					<li class="head_text_li2"><a href="top.html" class="text_link_2 head_text2">排行榜</a></li>
+					<li class="head_text_li2"><a href="play.html" class="text_link_2">分类歌单</a></li>
+					<li class="head_text_li2"><a href="#" class="text_link_2">电台</a></li>
+					<li class="head_text_li2"><a href="#" class="text_link_2">MV</a></li>
+					<li class="head_text_li2"><a href="#" class="text_link_2">数字专辑</a></li>
+					<li class="head_text_li2"><a href="#" class="text_link_2">票务</a></li>
+				</ul>
+				<div class="head_input">
+					<div class="head_input1">
+						<input class="head_input_1" aria-label="请输入搜索内容" type="text" placeholder="搜索音乐、MV、歌单、用户" accesskey="s">
+						<button class="input_button">
+							<i class="button_ico sprite"></i>
+							<span class="button_text">搜索</span>
+						</button>
+					</div>
+				</div>
+				<div class="login">
+					<span class="login_span">
+						<a class="login_login js_login" href="#">登录</a>
+						<a class="login_green login_vip js_vip" href="#">开通绿钻豪华版</a>
+						<a class="login_btn login_vip js_openmusic" href="#">开通付费包</a>
+					</span>
+				</div>
+			</div>
+		</div>
+		<!-- -----------以上为头部源码---------- -->
+		
+		<div class="main">
+			<div class="toplist_nav">
+				<dl class="toplist_nav__list">
+				    <dt class="toplist_nav__tit">巅峰榜</dt>
+				    <dd class="toplist_nav__item"><a id="1" onclick="bianse(this.id)" class="toplist_nav__link toplist_nav__link--current">流行指数榜</a></dd>
+				    <dd class="toplist_nav__item"><a id="2" onclick="bianse(this.id)" class="toplist_nav__link">热歌榜</a></dd>
+				    <dd class="toplist_nav__item"><a id="3" onclick="bianse(this.id)" class="toplist_nav__link">新歌榜</a></dd>
+				    <dd class="toplist_nav__item"><a id="4" onclick="bianse(this.id)" class="toplist_nav__link">飙升榜</a></dd>
+				    <dd class="toplist_nav__item"><a id="5" onclick="bianse(this.id)" class="toplist_nav__link">听歌识曲榜</a></dd>
+					<dd class="toplist_nav__item"><a id="6" onclick="bianse(this.id)" class="toplist_nav__link">MV榜</a></dd>
+				</dl>
+				
+				<dl class="toplist_nav__list">
+				    <dt class="toplist_nav__tit">地区榜</dt>
+				    <dd class="toplist_nav__item"><a id="7" onclick="bianse(this.id)" class="toplist_nav__link">内地榜</a></dd>
+				    <dd class="toplist_nav__item"><a id="8" onclick="bianse(this.id)" class="toplist_nav__link">香港地区榜</a></dd>
+				    <dd class="toplist_nav__item"><a id="9" onclick="bianse(this.id)" class="toplist_nav__link">台湾地区榜</a></dd>
+				    <dd class="toplist_nav__item"><a id="10" onclick="bianse(this.id)" class="toplist_nav__link">欧美榜</a></dd>
+				    <dd class="toplist_nav__item"><a id="11" onclick="bianse(this.id)" class="toplist_nav__link">韩国榜</a></dd>
+				    <dd class="toplist_nav__item"><a id="12" onclick="bianse(this.id)" class="toplist_nav__link">日本榜</a></dd>
+				</dl>
+				
+				<dl class="toplist_nav__list">
+				    <dt class="toplist_nav__tit">特色榜</dt>
+				    <dd class="toplist_nav__item"><a id="13" onclick="bianse(this.id)" class="toplist_nav__link">抖音排行榜</a></dd>
+				    <dd class="toplist_nav__item"><a id="14" onclick="bianse(this.id)" class="toplist_nav__link">网络歌曲榜</a></dd>
+				    <dd class="toplist_nav__item"><a id="15" onclick="bianse(this.id)" class="toplist_nav__link">电音榜</a></dd>
+				    <dd class="toplist_nav__item"><a id="16" onclick="bianse(this.id)" class="toplist_nav__link">ACG新歌榜</a></dd>
+				    <dd class="toplist_nav__item"><a id="17" onclick="bianse(this.id)" class="toplist_nav__link">国风热歌榜</a></dd>
+				    <dd class="toplist_nav__item"><a id="18" onclick="bianse(this.id)" class="toplist_nav__link">综艺新歌榜</a></dd>
+				    <dd class="toplist_nav__item"><a id="19" onclick="bianse(this.id)" class="toplist_nav__link">影视金曲榜</a></dd>
+				    <dd class="toplist_nav__item"><a id="20" onclick="bianse(this.id)" class="toplist_nav__link">腾讯音乐人原创榜</a></dd>
+				    <dd class="toplist_nav__item"><a id="21" onclick="bianse(this.id)" class="toplist_nav__link">K歌金曲榜</a></dd>
+				    <dd class="toplist_nav__item"><a id="22" onclick="bianse(this.id)" class="toplist_nav__link">说唱榜</a></dd>
+				</dl>
+				
+				<dl class="toplist_nav__list">
+				    <dt class="toplist_nav__tit">全球榜</dt>
+				    <dd class="toplist_nav__item"><a id="23" onclick="bianse(this.id)" class="toplist_nav__link">美国公告牌榜</a></dd>
+				    <dd class="toplist_nav__item"><a id="24" onclick="bianse(this.id)" class="toplist_nav__link">美国iTunes榜</a></dd>
+				    <dd class="toplist_nav__item"><a id="25" onclick="bianse(this.id)" class="toplist_nav__link">韩国Melon榜</a></dd>
+				    <dd class="toplist_nav__item"><a id="26" onclick="bianse(this.id)" class="toplist_nav__link">英国UK榜</a></dd>
+				    <dd class="toplist_nav__item"><a id="27" onclick="bianse(this.id)" class="toplist_nav__link">日本公信榜</a></dd>
+				    <dd class="toplist_nav__item"><a id="28" onclick="bianse(this.id)" class="toplist_nav__link">JOOX本地热播榜</a></dd>
+				    <dd class="toplist_nav__item"><a id="29" onclick="bianse(this.id)" class="toplist_nav__link">香港商台榜</a></dd>
+				    <dd class="toplist_nav__item"><a id="30" onclick="bianse(this.id)" class="toplist_nav__link">台湾KKBOX榜</a></dd>
+				    <dd class="toplist_nav__item"><a id="31" onclick="bianse(this.id)" class="toplist_nav__link">YouTube音乐排行榜</a></dd>
+				</dl>
+				<script type="text/javascript">
+					var a = '#1' , b
+					function bianse(id){
+						b = '#' + id
+						$(a).removeClass("toplist_nav__link--current");
+						$(b).addClass("toplist_nav__link--current");
+						a = '#' + id
+					}
+				</script>
+			</div>
+			<!----------------侧边----------------->
+			
+			<div class="mod_toplist">
+				<div class="toplist__hd">
+				    <h1 class="toplist__tit">流行指数榜</h1>
+				    <span class="toplist_switch"> 
+				        <span class="toplist_switch__data js_chosed_week">2019-12-03</span>
+				    </span>
+				    <a href="#" class="toplist__rule js_desc">榜单规则</a>
+				</div>
+				<!----------------标题----------------->
+				
+				<div class="mod_songlist_toolbar">
+				    <a href="#" class="mod_btn_green js_all_play"><i class="mod_btn_green__icon_play"></i>播放全部</a>
+				    <a href="#" class="mod_btn js_all_fav"><i class="mod_btn__icon_add"></i>添加到</a>
+				    <a href="#" class="mod_btn js_all_down"><i class="mod_btn__icon_down"></i>下载</a>
+				    <a href="#" class="mod_btn js_batch"><i class="mod_btn__icon_batch"></i>批量操作</a>
+					<a href="#" class="mod_btn js_into_comment"><i class="mod_btn__icon_comment"></i>评论(520)</a>
+				</div>
+				<!----------------按钮----------------->
+				
+				<div class="mod_songlist">
+					<ul class="songlist__header">
+					    <li class="songlist__header_name">歌曲</li>
+					    <li class="songlist__header_author">歌手</li>
+					    <li class="songlist__header_time">时长</li>
+					</ul>
+					<ul class="songlist__list">
+						<li>
+							<div class="songlist__item">
+								<div class="songlist__number  songlist__number--top">1</div>
+							    <div class="songlist__rank"><i class="icon_rank_popular"></i>262%</div>
+							    <div class="songlist__songname">
+									<i class="songlist__icon songlist__icon_exclusive sprite" ></i>
+									<span class="songlist__songname_txt" style="visibility: visible;">
+										<a href="#" class="songlist__cover album_name"><img src="img/top/1.jpg" class="songlist__pic" style="display: block; visibility: visible;"></a>
+										<a href="#" class="js_song" title="桥边姑娘 ">桥边姑娘</a>
+									</span>
+							    </div>
+							    <div class="songlist__artist" title="海伦">
+									<a href="#" title="海伦" class="singer_name">海伦</a>
+							    </div>
+							    <div class="songlist__time">03:03</div>
+							    <div class="songlist__other"></div>
+							</div>
+						</li>
+					
+						<li>
+							<div class="songlist__item songlist__item--even ">
+								<div class="songlist__number  songlist__number--top">2</div>
+							    <div class="songlist__rank"><i class="icon_rank_popular"></i>185%</div>
+							    <div class="songlist__songname">
+									<i class="songlist__icon songlist__icon_exclusive sprite" ></i>
+									<span class="songlist__songname_txt" style="visibility: visible;">
+										<a href="#" class="songlist__cover album_name"><img src="img/top/2.jpg" class="songlist__pic" style="display: block; visibility: visible;"></a>
+										<a href="#" class="js_song" title="拱手相让 ">拱手相让</a>
+									</span>
+							    </div>
+							    <div class="songlist__artist" title="胜屿">
+									<a href="#" title="胜屿" class="singer_name">胜屿</a>
+							    </div>
+							    <div class="songlist__time">03:53</div>
+							    <div class="songlist__other"></div>
+							</div>
+						</li>
+					
+						<li>
+							<div class="songlist__item">
+								<div class="songlist__number  songlist__number--top">3</div>
+							    <div class="songlist__rank"><i class="icon_rank_popular"></i>158%</div>
+							    <div class="songlist__songname">
+									<span class="songlist__songname_txt" style="visibility: visible;">
+										<a href="#" class="songlist__cover album_name"><img src="img/top/3.jpg" class="songlist__pic" style="display: block; visibility: visible;"></a>
+										<a href="#" class="js_song" title="下山 ">下山</a>
+									</span>
+							    </div>
+							    <div class="songlist__artist" title="要不要买菜">
+									<a href="#" title="要不要买菜" class="singer_name">要不要买菜</a>
+							    </div>
+							    <div class="songlist__time">02:53</div>
+							    <div class="songlist__other"></div>
+							</div>
+						</li>
+					
+						<li>
+							<div class="songlist__item songlist__item--even ">
+								<div class="songlist__number ">4</div>
+							    <div class="songlist__rank"><i class="icon_rank_popular"></i>158%</div>
+							    <div class="songlist__songname">
+									<i class="songlist__icon songlist__icon_exclusive sprite"></i>
+									<span class="songlist__songname_txt" style="visibility: visible;">
+										<a href="#" class="songlist__cover album_name"><img src="img/top/4.jpg" class="songlist__pic" style="display: block; visibility: visible;"></a>
+										<a href="#" class="js_song" title="冷静和热情之间 ">冷静和热情之间</a>
+									</span>
+							    </div>
+							    <div class="songlist__artist" title="易烊千玺">
+									<a href="#" title="易烊千玺" class="singer_name">易烊千玺</a>
+							    </div>
+							    <div class="songlist__time">04:42</div>
+							    <div class="songlist__other"></div>
+							</div>
+						</li>
+					
+						<li>
+							<div class="songlist__item">
+								<div class="songlist__number ">5</div>
+							    <div class="songlist__rank"><i class="icon_rank_popular"></i>154%</div>
+							    <div class="songlist__songname">
+									<i class="songlist__icon songlist__icon_exclusive sprite"></i>
+									<a href="#" class="songlist__icon songlist__icon_mv sprite" title="MV"><span class="icon_txt">MV</span></a>
+									<span class="songlist__songname_txt" style="visibility: visible;">
+										<a href="#" class="songlist__cover album_name"><img src="img/top/5.jpg" class="songlist__pic" style="display: block; visibility: visible;"></a>
+										<a href="#" class="js_song" title="余年 《庆余年》电视剧片尾曲">余年<span class="songlist__song_txt">《庆余年》电视剧片尾曲</span></a>
+									</span>
+							    </div>
+							    <div class="songlist__artist" title="肖战">
+									<a href="#" title="肖战" class="singer_name">肖战</a>
+							    </div>
+							    <div class="songlist__time">04:25</div>
+							    <div class="songlist__other"></div>
+							</div>
+						</li>
+					
+						<li>
+							<div class="songlist__item songlist__item--even ">
+								<div class="songlist__number ">6</div>
+							    <div class="songlist__rank"><i class="icon_rank_popular"></i>135%</div>
+							    <div class="songlist__songname">
+									<span class="songlist__songname_txt" style="visibility: visible;">
+										<a href="#" class="songlist__cover album_name"><img src="img/top/6.jpg" class="songlist__pic" style="display: block; visibility: visible;"></a>
+										<a href="#" class="js_song" title="好几年 ">好几年</a>
+									</span>
+							    </div>
+							    <div class="songlist__artist" title="刘心">
+									<a href="#" title="刘心" class="singer_name">刘心</a>
+							    </div>
+							    <div class="songlist__time">03:37</div>
+							    <div class="songlist__other"></div>
+							</div>
+						</li>
+					
+						<li>
+							<div class="songlist__item">
+								<div class="songlist__number ">7</div>
+							    <div class="songlist__rank"><i class="icon_rank_popular"></i>99%</div>
+							    <div class="songlist__songname">
+									<i class="songlist__icon songlist__icon_exclusive sprite" ></i>
+									<a href="#" class="songlist__icon songlist__icon_mv sprite" title="MV"><span class="icon_txt">MV</span></a>
+									<span class="songlist__songname_txt" style="visibility: visible;">
+										<a href="#" class="songlist__cover album_name"><img src="img/top/7.jpg" class="songlist__pic" style="display: block; visibility: visible;"></a>
+										<a href="#" class="js_song" title="欧若拉 ">欧若拉</a>
+									</span>
+							    </div>
+							    <div class="songlist__artist" title="张韶涵">
+									<a href="#" title="张韶涵" class="singer_name">张韶涵</a>
+							    </div>
+							    <div class="songlist__time">04:21</div>
+							    <div class="songlist__other"></div>
+							</div>
+						</li>
+					
+						<li>
+							<div class="songlist__item songlist__item--even ">
+								<div class="songlist__number ">8</div>
+							    <div class="songlist__rank"><i class="icon_rank_popular"></i>66%</div>
+							    <div class="songlist__songname">
+									<i class="songlist__icon songlist__icon_exclusive sprite" ></i>
+									<span class="songlist__songname_txt" style="visibility: visible;">
+										<a href="#" class="songlist__cover album_name"><img src="img/top/8.jpg" class="songlist__pic" style="display: block; visibility: visible;"></a>
+										<a href="#" class="js_song" title="忘情牛肉面 ">忘情牛肉面</a>
+									</span>
+							    </div>
+							    <div class="songlist__artist" title="马健涛">
+									<a href="#" title="马健涛" class="singer_name">马健涛</a>
+							    </div>
+							    <div class="songlist__time">03:02</div>
+							    <div class="songlist__other"></div>
+							</div>
+						</li>
+					
+						<li>
+							<div class="songlist__item">
+								<div class="songlist__number ">9</div>
+							    <div class="songlist__rank"><i class="icon_rank_popular"></i>57%</div>
+							    <div class="songlist__songname">
+									<i class="songlist__icon songlist__icon_exclusive sprite" ></i>
+									<span class="songlist__songname_txt" style="visibility: visible;">
+										<a href="#" class="songlist__cover album_name"><img src="img/top/9.jpg" class="songlist__pic" style="display: block; visibility: visible;"></a>
+										<a href="#" class="js_song" title="一念一生 《庆余年》电视剧主题曲">一念一生<span class="songlist__song_txt">《庆余年》电视剧主题曲</span></a>
+									</span>
+							    </div>
+							    <div class="songlist__artist" title="李健">
+									<a href="#" title="李健" class="singer_name">李健</a>
+							    </div>
+							    <div class="songlist__time">04:36</div>
+							    <div class="songlist__other"></div>
+							</div>
+						</li>
+					
+						<li>
+							<div class="songlist__item songlist__item--even ">
+								<div class="songlist__number ">10</div>
+							    <div class="songlist__rank"><i class="icon_rank_popular"></i>57%</div>
+							    <div class="songlist__songname">
+									<i class="songlist__icon songlist__icon_exclusive sprite" ></i>
+									<a href="#" class="songlist__icon songlist__icon_mv sprite" title="MV"><span class="icon_txt">MV</span></a>
+									<span class="songlist__songname_txt" style="visibility: visible;">
+										<a href="#" class="songlist__cover album_name"><img src="img/top/10.jpg" class="songlist__pic" style="display: block; visibility: visible;"></a>
+										<a href="#" class="js_song" title="触不可及 《触不可及》（美版）电影同名推广曲">触不可及<span class="songlist__song_txt">《触不可及》（美版）电影同名推广曲</span></a>
+									</span>
+							    </div>
+							    <div class="songlist__artist" title="周深">
+									<a href="#" title="周深" class="singer_name">周深</a>
+							    </div>
+							    <div class="songlist__time">03:27</div>
+							    <div class="songlist__other"></div>
+							</div>
+						</li>
+					
+						<li>
+							<div class="songlist__item">
+								<div class="songlist__number ">11</div>
+							    <div class="songlist__rank"><i class="icon_rank_popular"></i>55%</div>
+							    <div class="songlist__songname">
+									<i class="songlist__icon songlist__icon_exclusive sprite" ></i>
+									<a href="#" class="songlist__icon songlist__icon_mv sprite" title="MV"><span class="icon_txt">MV</span></a>
+									<span class="songlist__songname_txt" style="visibility: visible;">
+										<a href="#" class="songlist__cover album_name"><img src="img/top/11.jpg" class="songlist__pic" style="display: block; visibility: visible;"></a>
+										<a href="#" class="js_song" title="野狼disco (Live) ">野狼disco (Live)</a>
+									</span>
+							    </div>
+							    <div class="songlist__artist" title="李克勤 / 周深">
+									<a href="#" title="李克勤" class="singer_name">李克勤</a>
+									/
+									<a href="#" title="周深" class="singer_name">周深</a>
+							    </div>
+							    <div class="songlist__time">03:38</div>
+							    <div class="songlist__other"></div>
+							</div>
+						</li>
+					
+						<li>
+							<div class="songlist__item songlist__item--even ">
+								<div class="songlist__number ">12</div>
+							    <div class="songlist__rank"><i class="icon_rank_popular"></i>54%</div>
+							    <div class="songlist__songname">
+									<a href="#" class="songlist__icon songlist__icon_mv sprite" title="MV"><span class="icon_txt">MV</span></a>
+									<span class="songlist__songname_txt" style="visibility: visible;">
+										<a href="#" class="songlist__cover album_name"><img src="img/top/12.jpg" class="songlist__pic" style="display: block; visibility: visible;"></a>
+										<a href="#" class="js_song" title="还是分开 ">还是分开</a>
+									</span>
+							    </div>
+							    <div class="songlist__artist" title="张叶蕾">
+									<a href="#"= title="张叶蕾" class="singer_name">张叶蕾</a>
+							    </div>
+							    <div class="songlist__time">03:46</div>
+							    <div class="songlist__other"></div>
+							</div>
+						</li>
+					
+						<li>
+							<div class="songlist__item">
+								<div class="songlist__number ">13</div>
+							    <div class="songlist__rank"><i class="icon_rank_popular"></i>51%</div>
+							    <div class="songlist__songname">
+									<span class="songlist__songname_txt" style="visibility: visible;">
+										<a href="#" class="songlist__cover album_name"><img src="img/top/13.jpg" class="songlist__pic" style="display: block; visibility: visible;"></a>
+										<a href="#" class="js_song" title="哈尼宝贝 ">哈尼宝贝</a>
+									</span>
+							    </div>
+							    <div class="songlist__artist" title="南征北战NZBZ">
+									<a href="#" title="南征北战NZBZ" class="singer_name">南征北战NZBZ</a>
+							    </div>
+							    <div class="songlist__time">03:29</div>
+							    <div class="songlist__other"></div>
+							</div>
+						</li>
+					
+						<li>
+							<div class="songlist__item songlist__item--even ">
+								<div class="songlist__number ">14</div>
+							    <div class="songlist__rank"><i class="icon_rank_popular"></i>44%</div>
+							    <div class="songlist__songname">
+									<span class="songlist__songname_txt" style="visibility: visible;">
+										<a href="#" class="songlist__cover album_name"><img src="img/top/14.jpg" class="songlist__pic" style="display: block; visibility: visible;"></a>
+										<a href="#" class="js_song" title="酒醉的蝴蝶 (女声版) ">酒醉的蝴蝶 (女声版)</a>
+									</span>
+							    </div>
+							    <div class="songlist__artist" title="孙艺琪">
+									<a href="#" data-singermid="004XZS1K3zSnvB" class="singer_name">孙艺琪</a>
+							    </div>
+							    <div class="songlist__time">03:28</div>
+							    <div class="songlist__other"></div>
+							</div>
+						</li>
+					
+						<li>
+							<div class="songlist__item">
+								<div class="songlist__number ">15</div>
+							    <div class="songlist__rank"><i class="icon_rank_popular"></i>41%</div>
+							    <div class="songlist__songname">
+									<span class="songlist__songname_txt" style="visibility: visible;">
+										<a href="#" class="songlist__cover album_name"><img src="img/top/15.jpg" alt="孤芳自赏" class="songlist__pic" style="display: block; visibility: visible;"></a>
+										<a href="#" class="js_song" title="此时已莺飞草长 (Perfect Mix) ">此时已莺飞草长 (Perfect Mix)</a>
+									</span>
+							    </div>
+							    <div class="songlist__artist" title="南辞 / 在忠">
+									<a href="#" title="南辞" class="singer_name">南辞</a>
+									/
+									<a href="#" title="在忠" class="singer_name">在忠</a>
+							    </div>
+							    <div class="songlist__time">00:37</div>
+							    <div class="songlist__other"></div>
+							</div>
+						</li>
+					
+						<li>
+							<div class="songlist__item songlist__item--even ">
+								<div class="songlist__number ">16</div>
+							    <div class="songlist__rank"><i class="icon_rank_popular"></i>38%</div>
+							    <div class="songlist__songname">
+									<a href="#" class="songlist__icon songlist__icon_mv sprite" title="MV"><span class="icon_txt">MV</span></a>
+									<span class="songlist__songname_txt" style="visibility: visible;">
+										<a href="#" class="songlist__cover album_name"><img src="img/top/16.jpg" class="songlist__pic" style="display: block; visibility: visible;"></a>
+										<a href="#" title="国王与乞丐 (Live) ">国王与乞丐 (Live)</a>
+									</span>
+							    </div>
+							    <div class="songlist__artist" title="华晨宇">
+									<a href="#" title="华晨宇" class="singer_name">华晨宇</a>
+							    </div>
+							    <div class="songlist__time">02:57</div>
+							    <div class="songlist__other"></div>
+							</div>
+						</li>
+					
+						<li>
+							<div class="songlist__item">
+								<div class="songlist__number ">17</div>
+							    <div class="songlist__rank"><i class="icon_rank_popular"></i>35%</div>
+							    <div class="songlist__songname">
+									<i class="songlist__icon songlist__icon_exclusive sprite" ></i>
+									<a href="#" class="songlist__icon songlist__icon_mv sprite" title="MV"><span class="icon_txt">MV</span></a>
+									<span class="songlist__songname_txt" style="visibility: visible;">
+										<a href="#" class="songlist__cover album_name"><img src="img/top/17.jpg" class="songlist__pic" style="display: block; visibility: visible;"></a>
+										<a href="#" class="js_song" title="Dancing With Your Ghost ">Dancing With Your Ghost</a>
+									</span>
+							    </div>
+							    <div class="songlist__artist" title="Sasha Sloan">
+									<a href="#" title="Sasha Sloan" class="singer_name">Sasha Sloan</a>
+							    </div>
+							    <div class="songlist__time">03:17</div>
+								<div class="songlist__other"></div>
+							</div>
+						</li>
+					
+						<li>
+							<div class="songlist__item songlist__item--even ">
+								<div class="songlist__number ">18</div>
+							    <div class="songlist__rank"><i class="icon_rank_popular"></i>30%</div>
+							    <div class="songlist__songname">
+									<i class="songlist__icon songlist__icon_exclusive sprite" ></i>
+									<a href="#" class="songlist__icon songlist__icon_mv sprite" title="MV"><span class="icon_txt">MV</span></a>
+									<span class="songlist__songname_txt" style="visibility: visible;">
+										<a href="#" class="songlist__cover album_name"><img  src="img/top/18.jpg" class="songlist__pic" style="display: block; visibility: visible;"></a>
+										<a href="#" class="js_song" title="左肩 ">左肩</a>
+									</span>
+							    </div>
+							    <div class="songlist__artist" title="安苏羽">
+									<a href="#" title="安苏羽" class="singer_name">安苏羽</a>
+							    </div>
+							    <div class="songlist__time">03:23</div>
+							    <div class="songlist__other"></div>
+							</div>
+						</li>
+					
+						<li>
+							<div class="songlist__item">
+								<div class="songlist__number ">19</div>
+							    <div class="songlist__rank"><i class="icon_rank_popular"></i>28%</div>
+							    <div class="songlist__songname">
+									<a href="#" class="songlist__icon songlist__icon_mv sprite" title="MV"><span class="icon_txt">MV</span></a>
+									<span class="songlist__songname_txt" style="visibility: visible;">
+										<a href="#" class="songlist__cover album_name"><img src="img/top/19.jpg" class="songlist__pic" style="display: block; visibility: visible;"></a>
+										<a href="#" class="js_song" title="越过山丘 ——致 李宗盛先生">越过山丘<span class="songlist__song_txt">——致 李宗盛先生</span></a>
+									</span>
+							    </div>
+							    <div class="songlist__artist" title="杨宗纬">
+									<a href="#" title="杨宗纬" class="singer_name">杨宗纬</a>
+							    </div>
+							    <div class="songlist__time">03:53</div>
+							    <div class="songlist__other"></div>
+							</div>
+						</li>
+					
+						<li>
+							<div class="songlist__item songlist__item--even ">
+								<div class="songlist__number ">20</div>
+							    <div class="songlist__rank"><i class="icon_rank_popular"></i>27%</div>
+							    <div class="songlist__songname">
+									<i class="songlist__icon songlist__icon_exclusive sprite" ></i>
+									<a href="#" class="songlist__icon songlist__icon_mv sprite" title="MV"><span class="icon_txt">MV</span></a>
+									<span class="songlist__songname_txt">
+										<a href="#" class="songlist__cover album_name"><img src="img/top/20.jpg" class="songlist__pic"></a>
+										<a href="#" class="js_song" title="依靠 (Live) ">依靠 (Live)</a>
+									</span>
+							    </div>
+							    <div class="songlist__artist" title="任贤齐 / 摩登兄弟刘宇宁">
+									<a href="#" title="任贤齐" class="singer_name">任贤齐</a>
+									/
+									<a href="#" title="摩登兄弟刘宇宁" class="singer_name">摩登兄弟刘宇宁</a>
+							    </div>
+							    <div class="songlist__time">04:32</div>
+							    <div class="songlist__other"></div>
+							</div>
+						</li>
+					</ul>
+					<div class="client_guide">
+						<p class="client_guide__txt">查看更多内容，请下载客户端</p>
+						<a href="#" class="client_guide__btn js_limitButton">立即下载</a>
+					</div>
+				</div>
+				<!----------------排行----------------->
+				
+				<div class="mod_comment">
+					<div class="part__hd">
+					    <h2 class="part__tit">
+							评论
+							<span class="c_tx_thin part__tit_desc js_all_comment_num">共520条评论</span>
+						</h2>
+					</div>
+					<div class="mod_comment js_cmt_input">
+						<div class="comment__input">
+							<div class="comment__textarea js_comment__textarea  c_bg_normal">
+								<div class="comment__textarea_inner">
+							        <div class="js_reply_text comment__textarea_input c_tx_normal" style="display: none;" contenteditable="true">期待你的神评论……</div>
+								</div>
+								<div class="comment__tips js_comment_tips c_tx_thin" data-max="300">剩余<span class="c_tx_highlight">300</span>字</div>
+							</div>
+							<a class="comment__face js_cmt_face"><i class="icon_comment icon_comment_face"></i></a>
+							<div class="comment__tool"><a class="mod_btn_green comment__tool_btn js_send_reply">发表评论</a></div>
+						</div>
+					</div>
+					<div class="mod_all_comment js_mod_all">
+						<div class="comment_type__title c_b_normal">
+							<h2 class="comment_new_count">最新评论(520)</h2>
+						</div>
+						<ul class="comment__list js_all_list">
+							<li class="comment__list_item c_b_normal js_cmt_li" style="visibility: visible;">
+							    <a href="#" class="comment__avatar js_nick">
+							        <img class="js_lazy_comment_pic" title="用户一" style="display: block; visibility: visible;" src="img/tou/1.jpg">
+							    </a>
+								<h4 class="comment__title">
+									<a href="javascript:;" class="c_tx_thin js_nick js_nick_only">用户一</a>
+							    </h4>
+								<p class="c_tx_normal comment__text js_hot_text">这是一条评论（1）</p>
+								<div class="comment__opt js_comment_opt">
+									<span class="comment__date c_tx_thin">02:21</span>
+									<a class="comment__zan js_cmt_praise " href="#"><i class="icon_comment icon_comment_like"></i><span class="js_praise_num">0</span></a>
+									<a class="comment__feedback js_feedback icon_comment icon_comment_feedback" href="#">回复</a>
+								</div>
+								<div class="js_reply_container"></div>
+							</li>
+							
+							<li class="comment__list_item c_b_normal js_cmt_li" style="visibility: visible;">
+							    <a href="#" class="comment__avatar js_nick">
+							        <img class="js_lazy_comment_pic" title="用户二" style="display: block; visibility: visible;" src="img/tou/2.jpg">
+							    </a>
+								<h4 class="comment__title">
+									<a href="javascript:;" class="c_tx_thin js_nick js_nick_only">用户二</a>
+							    </h4>
+								<p class="c_tx_normal comment__text js_hot_text">这是一条评论（2）</p>
+								<div class="comment__opt js_comment_opt">
+									<span class="comment__date c_tx_thin">12:11</span>
+									<a class="comment__zan js_cmt_praise " href="#"><i class="icon_comment icon_comment_like"></i><span class="js_praise_num">5</span></a>
+									<a class="comment__feedback js_feedback icon_comment icon_comment_feedback" href="#">回复</a>
+								</div>
+								<div class="js_reply_container"></div>
+							</li>
+							
+							<li class="comment__list_item c_b_normal js_cmt_li" style="visibility: visible;">
+							    <a href="#" class="comment__avatar js_nick">
+							        <img class="js_lazy_comment_pic" title="MIMO" style="display: block; visibility: visible;" src="img/tou/3.jpg">
+							    </a>
+								<h4 class="comment__title">
+									<a href="javascript:;" class="c_tx_thin js_nick js_nick_only">MIMO</a>
+							    </h4>
+								<p class="c_tx_normal comment__text js_hot_text">还不错哦！</p>
+								<div class="comment__opt js_comment_opt">
+									<span class="comment__date c_tx_thin">04:31</span>
+									<a class="comment__zan js_cmt_praise " href="#"><i class="icon_comment icon_comment_like"></i><span class="js_praise_num">666</span></a>
+									<a class="comment__feedback js_feedback icon_comment icon_comment_feedback" href="#">回复</a>
+								</div>
+								<div class="js_reply_container"></div>
+							</li>
+							
+						</ul>
+						<div class="mod_page_nav js_pager_comment">
+							<strong class="current">1</strong>
+							<a class="js_pageindex">2</a>
+							<a class="js_pageindex">3</a>
+							<a class="js_pageindex">4</a>
+							<strong class="more">...</strong>
+							<a class="js_pageindex">520</a>
+							<a class="next js_pageindex" title="下一页"><span>&gt;</span></a>
+						</div>
+					</div>
+					<p class="comment__rule">
+						<a class="js_rule_btn" href="#">QQ音乐评论指北</a>
+					</p>
+				</div>
+				<!----------------评论----------------->
+				
+			</div>
+			<!----------------主体----------------->
+			
+		</div>
+		<!-- -----------以上为主体源码---------- -->
+		
+		<div class="footer_1">
+			<div class="footer_div">
+				<div class="footer_info">
+					<div class="footer_download">
+						<h3 class="footer_download_top_text">下载QQ音乐客户端</h3>
+						<ul class="footer_download_ul">
+							<li class="footer_download_li">
+								<a href="#" class="footer_down_a">
+									<i class="footer_down_pc">
+										<span class="footer_down_txt">QQ音乐</span>
+									</i>PC版
+								</a>
+							</li>
+							<li class="footer_download_li">
+								<a href="#" class="footer_down_a">
+									<i class="footer_down_mac">
+										<span class="footer_down_txt">QQ音乐</span>
+									</i>MAC版
+								</a>
+							</li>
+							<li class="footer_download_li">
+								<a href="#" class="footer_down_a">
+									<i class="footer_down_android">
+										<span class="footer_down_txt">QQ音乐</span>
+									</i>Android版
+								</a>
+							</li>
+							<li class="footer_download_li">
+								<a href="#" class="footer_down_a">
+									<i class="footer_down_iphone">
+										<span class="footer_down_txt">QQ音乐</span>
+									</i>iPhone版
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="footer_product">
+						<h3 class="footer_product_top_text">特色产品</h3>
+						<ul class="footer_product_ul">
+							<li class="footer_product_li footer_product_li_img">
+								<a href="#" class="footer_product_a">
+									<i class="footer_product_kg"></i>全民K歌
+								</a>
+							</li>
+							<li class="footer_product_li footer_product_li_img">
+								<a href="#" class="footer_product_a">
+									<i class="footer_product_ss"></i>Super Sound
+								</a>
+							</li>
+							<li class="footer_product_li footer_product_li_img">
+								<a href="#" class="footer_product_a">
+									<i class="footer_product_qp"></i>QPlay
+								</a>
+							</li>
+							<li class="footer_product_li">
+								<a href="#" class="footer_product_a">车载互联</a>
+							</li>
+							<li class="footer_product_li">
+								<a href="#" class="footer_product_a">QQ演出</a>
+							</li>
+						</ul>
+					</div>
+					<div class="footer_group">
+						<h3 class="footer_group_top_text">TME集团官网</h3>
+						<ul class="footer_group_ul">
+							<li class="footer_group_li">
+								<a href="#" class="footer_group_a">腾讯音乐</a>
+							</li>
+						</ul>
+					</div>
+					<div class="footer_link">
+						<h3 class="footer_link_top_text">合作链接</h3>
+						<ul class="footer_link_ul">
+							<li class="footer_link_li"><a href="#" class="footer_link_a">CJ ENM</a></li>
+							<li class="footer_link_li"><a href="#" class="footer_link_a">腾讯视频</a></li>
+							<li class="footer_link_li"><a href="#" class="footer_link_a">手机QQ空间</a></li>
+							<li class="footer_link_li"><a href="#" class="footer_link_a">最新版QQ</a></li>
+							<li class="footer_link_li"><a href="#" class="footer_link_a">腾讯社交广告</a></li>
+							<li class="footer_link_li"><a href="#" class="footer_link_a">电脑管家</a></li>
+							<li class="footer_link_li"><a href="#" class="footer_link_a">QQ浏览器</a></li>
+							<li class="footer_link_li"><a href="#" class="footer_link_a">腾讯微云</a></li>
+							<li class="footer_link_li"><a href="#" class="footer_link_a">腾讯云</a></li>
+							<li class="footer_link_li"><a href="#" class="footer_link_a">企鹅FM</a></li>
+							<li class="footer_link_li"><a href="#" class="footer_link_a">智能电视网</a></li>
+							<li class="footer_link_li"><a href="#" class="footer_link_a">当贝市场</a></li>
+						</ul>
+					</div>
+					<div class="footer_platform">
+						<h3 class="footer_platform_top_text">开放平台</h3>
+						<ul class="footer_platform_ul">
+							<li class="footer_platform_li">
+								<a href="#" class="footer_link_a">QQ音乐开放平台</a>
+							</li>
+							<li class="footer_platform_li">
+								<a href="#" class="footer_link_a">腾讯音乐人</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="footer_copy">
+					<p>
+						<a href="#" title="关于腾讯">关于腾讯</a>
+						|
+						<a href="#" title="About Tencent">About Tencent</a>
+						|
+						<a href="#" title="服务条款">服务条款</a>
+						|
+						<a href="#" title="用户服务协议">用户服务协议</a>
+						|
+						<a href="#" title="隐私政策">隐私政策</a>
+						|
+						<a href="#" title="权利声明">权利声明</a>
+						|
+						<a href="#" title="广告服务">广告服务</a>
+						|
+						<a href="#" title="腾讯招聘">腾讯招聘</a>
+						|
+						<a href="#" title="客服中心">客服中心</a>
+						|
+						<a href="#" title="网站导航">网站导航</a>
+					</p>
+					<p>
+						Copyright © 8991 - 9102 Tencent.
+						<a href="#" title="All Rights Reserved.">All Rights Reserved.</a>
+					</p>
+					<p>
+						腾讯公司
+						<a href="#" title="版权所有">版权所有</a>
+						<a href="#" title="腾讯网络文化经营许可证">腾讯网络文化经营许可证</a>
+					</p>
+				</div>
+			</div>
+		</div>
+		<!-- -----------以上为底部源码---------- -->
+		
+		<a href="#" class="btn_bottom_top sprite_before js_btn_top" style="display: block;"><span class="icon_txt">返回顶部</span></a>
+		<a href="#" class="btn_bottom_feedback js_btn_feedback">反馈</a>
+		<a href="#" class="btn_bottom_player sprite_before js_openplayer"><span class="icon_txt">播放器</span></a>
+		<div class="popup_guide">
+			<img src="img/logo.png" class="popup_guide__logo">
+			<p class="popup_guide__txt">千万高品质曲库尽享</p>
+			<a class="popup_guide__btn js_floatLayer_download" href="#">
+				<i class="popup_guide__btn_icon sprite"></i>
+				客户端下载
+			</a>
+		</div>
+		<!-- -----------以上为边缘源码---------- -->
+	</body>
+</html>
